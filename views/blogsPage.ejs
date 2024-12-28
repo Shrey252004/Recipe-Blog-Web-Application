@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Savoury Recipies</title>
+  </head>
+  <%- include("Partials/header.ejs") %>
+  <body class="min-h-screen">
+    <section class="py-12 px-6 bg-white">
+      <div class="text-center mb-12">
+        <h2 class="text-4xl font-extrabold text-emerald-700">
+          Savoury Recipies
+        </h2>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-3">
+        <% blogs.forEach((blogs,index) => { %>
+        <a href="/recipe/<%= index %>">
+          <div
+            class="relative overflow-hidden rounded-lg shadow-lg mb-10 hover:shadow-lg hover:shadow-black"
+          >
+            <img src="<%= blogs.imgurl %>" class="w-full h-48 object-cover" />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent p-4 flex flex-col justify-end"
+            >
+              <h3 class="text-lg font-semibold text-white">
+                <%= blogs.recipename %>
+              </h3>
+            </div>
+          </div>
+        </a>
+        <% }) %>
+
+        <div
+          class="relative overflow-hidden rounded-lg shadow-lg mb-10 hover:shadow-lg hover:shadow-black"
+        >
+          <a href="/newBlog">
+            <img
+              src="/Photos/plus.png"
+              alt="Create"
+              class="h-48 object-cover pl-24"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent p-4 flex flex-col justify-end"
+            >
+              <h3 class="text-lg font-semibold text-white">New Recipe</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+  <%- include("Partials/footer.ejs") %>
+</html>
