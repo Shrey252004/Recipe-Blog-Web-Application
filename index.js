@@ -13,7 +13,7 @@ const blogs = [
   {
     recipename: "Chocolate Cake",
     imgurl: "https://www.hersheyland.com/content/dam/hersheyland/en-us/recipes/recipe-images/2-hersheys-perfectly-chocolate-chocolate-cake-recipe-hero.jpg",
-    recipe: "A delicious and moist chocolate cake recipe.",
+    recipe: "To make a chocolate cake, start by preheating your oven to 350°F (175°C) and greasing and flouring two round cake pans. In a bowl, sift together 1 and 3/4 cups of all-purpose flour, 1 and 1/2 cups of granulated sugar, 3/4 cup of unsweetened cocoa powder, 1 and 1/2 teaspoons of baking powder, 1 and 1/2 teaspoons of baking soda, and a pinch of salt. In a separate bowl, whisk together 2 large eggs, 1 cup of whole milk, 1/2 cup of vegetable oil, and 2 teaspoons of vanilla extract. Gradually add the wet ingredients to the dry ingredients, mixing until combined. Stir in 1 cup of boiling water, which will make the batter thin. Pour the batter evenly into the prepared pans and bake for about 30 to 35 minutes, or until a toothpick inserted in the center comes out clean. Once the cakes are done, let them cool in the pans for 10 minutes, then transfer them to a wire rack to cool completely. For the frosting, beat 1/2 cup of softened butter with 1/4 cup of cocoa powder, then gradually add powdered sugar, 1/4 cup at a time, along with 1/4 cup of milk and 1 teaspoon of vanilla extract. Once the frosting is smooth and fluffy, spread it between the layers and over the top of the cake. Enjoy your homemade chocolate cake!",
   },
   {
     recipename: "Spaghetti Bolognese",
